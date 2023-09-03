@@ -1,7 +1,22 @@
 import React from "react"
-import { Text,View } from "react-native"
-const App = () => {
+import { Text,View,SafeAreaView,StyleSheet } from "react-native"
+const MyComp = () => {
+    return (
+        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
+            <Text>
+                Current Weather
+            </Text>
+        </View>
+        </SafeAreaView>
+
+    )
     
-    return <Text>Hello World MYRE</Text>
 }
-export default App
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor: "pink"
+    }
+})
+export default MyComp
