@@ -3,11 +3,12 @@ import { Text,View,SafeAreaView,StyleSheet } from "react-native"
 const MyComp = () => {
     return (
         <SafeAreaView style={styles.wrapper}>
-            <View style={styles.container}>
+            <View style={{backgroundColor: "yellow"}}>
                 <Text>
-                    Current Weather
+                    Hello World
                 </Text>
             </View>
+
         </SafeAreaView>
 
     )
@@ -16,12 +17,7 @@ const MyComp = () => {
 const styles = StyleSheet.create({
     wrapper: {
         flex: 1
-    },
-    container: {
-        backgroundColor: "blue",
-        flex: 1,
-        alignItems: "center"
-    },
+    }
 
 })
 export default MyComp
